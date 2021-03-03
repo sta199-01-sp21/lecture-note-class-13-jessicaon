@@ -2,8 +2,10 @@
 title: "Simulation-based inference - confidence intervals"
 author: "Jessica On"
 date: "March 3, 2021"
-output: html_document
-editor_options: 
+output:
+  pdf_document: default
+  html_document: default
+editor_options:
   chunk_output_type: console
 ---
 
@@ -189,7 +191,7 @@ Consider 20 1-bedroom apartments that were randomly selected on
 Craigslist Manhattan from apartments listed as "by owner".
 
 ```{r data_manhattan}
-manhattan <- read_csv("~/manhattan.csv")
+manhattan <- read_csv("~/R/lecture-note-class-13-jessicaon/manhattan.csv")
 ```
 
 Consider 3-10 day survival of mice randomized to various
@@ -252,8 +254,8 @@ First, identify the following:
 
 - Population: 
 - Parameter of interest:
-- Sample:
-- Sample size:
+- Sample: 1 bedroom apartments
+- Sample size: 20
 
 To create our confidence interval, we'll follow the four-step bootstrap
 scheme outlined in the slides using functions from `infer`.
